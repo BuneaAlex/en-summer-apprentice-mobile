@@ -26,6 +26,6 @@ public interface IApiService {
     @GET("orders")
     Call<List<OrderDTO>> getOrders(@Query("customerId") int customerId);
 
-    @POST("/orders")
+    @POST("orders")
     Call<OrderDTO> saveOrder(@Body OrderRequest orderRequest);
 }
